@@ -1,0 +1,65 @@
+.sustainability{
+
+    padding:120px 0;
+
+    background:#F7FAF7;
+
+}
+
+.sustainability .container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.sustainability h2{
+
+    margin:20px 0;
+
+    font-size:42px;
+
+}
+
+.sustainability p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+.points{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.points div{
+
+    font-weight:500;
+
+}
+
+.points i{
+
+    color:#2E7D32;
+
+    margin-right:10px;
+
+}
+
+.right img{
+
+    border-radius:20px;
+
+}

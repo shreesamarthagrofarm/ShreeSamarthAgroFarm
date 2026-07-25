@@ -1,0 +1,57 @@
+.stats{
+
+    position:relative;
+
+    padding:100px 0;
+
+    background:url("../images/gallery/gallery7.jpg") center/cover;
+
+}
+
+.stats .overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.70);
+
+}
+
+.stats .container{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    z-index:2;
+
+}
+
+.stat-box{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.stat-box h2{
+
+    font-size:60px;
+
+    color:#D4AF37;
+
+}
+
+.stat-box p{
+
+    font-size:20px;
+
+    margin-top:15px;
+
+}

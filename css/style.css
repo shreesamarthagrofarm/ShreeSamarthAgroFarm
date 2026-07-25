@@ -1,0 +1,302 @@
+/* ==========================
+      GOOGLE FONT
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8faf8;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* Import Section CSS */
+
+@import url("navbar.css");
+@import url("hero.css");
+@import url("about.css");
+@import url("why.css");
+@import url("services.css");
+@import url("products.css");
+@import url("gallery.css");
+@import url("sustainability.css");
+@import url("stats.css");
+@import url("news.css");
+@import url("footer.css");
+@import url("responsive.css");
+@import url("lightbox.css");
+/* Button */
+
+.btn{
+
+padding:16px 38px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.35s;
+
+box-shadow:0 12px 25px rgba(46,125,50,.25);
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.btn:hover{
+
+    background:#1B5E20;
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid white;
+
+}
+
+.btn-outline:hover{
+
+    background:white;
+
+    color:#2E7D32;
+
+}
+
+/*==========================
+        LOADER
+==========================*/
+
+.loader{
+
+    position:fixed;
+    inset:0;
+    background:#ffffff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+    transition:.6s;
+
+}
+
+.loader.hide{
+
+    opacity:0;
+    visibility:hidden;
+
+}
+
+.spinner{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    border:6px solid #ddd;
+
+    border-top:6px solid #2E7D32;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==============================
+    SCROLL PROGRESS BAR
+==============================*/
+
+#progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:linear-gradient(90deg,#2E7D32,#66BB6A,#D4AF37);
+
+    z-index:999999;
+
+}
+
+
+
+/*==============================
+    FLOAT ANIMATION
+==============================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+
+
+/*==============================
+    FADE UP
+==============================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:.8s;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.wave{
+
+position:absolute;
+
+bottom:-1px;
+
+left:0;
+
+width:100%;
+
+line-height:0;
+
+}
+
+.wave svg{
+
+display:block;
+
+width:100%;
+
+}
+
+.logo-slider{
+
+overflow:hidden;
+
+padding:50px 0;
+
+}
+
+.slide-track{
+
+display:flex;
+
+width:calc(250px * 10);
+
+animation:scroll 30s linear infinite;
+
+}
+
+.slide-track img{
+
+width:180px;
+
+margin:0 40px;
+
+filter:grayscale(100%);
+
+transition:.3s;
+
+}
+
+.slide-track img:hover{
+
+filter:none;
+
+transform:scale(1.1);
+
+}
+
+@keyframes scroll{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(calc(-220px * 5));
+
+}
+
+}
